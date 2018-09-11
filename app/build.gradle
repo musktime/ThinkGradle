@@ -1,0 +1,5 @@
+//为当前项目创建一个wrapper包，gradle-wrapper.jar是让项目没有安装gradle的情况下还能使用gradle
+task wrapper(type:Wrapper){
+	gradleVersion='3.3'
+	println("this is project app")
+}

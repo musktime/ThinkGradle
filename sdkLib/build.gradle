@@ -1,0 +1,7 @@
+def aClosure={
+    println("This is sdkLib")
+}
+
+afterEvaluate{
+    aClosure.call();
+}

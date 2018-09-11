@@ -1,5 +1,4 @@
 println("hello world")
-println("计算："+method2(3,4))
 
 //定义变量
 def a=1
@@ -7,6 +6,7 @@ def b="abc"
 def int c
 
 //定义字符串
+println()
 def aa='diyi zifu chuan'  //''表示完全按照符号内部的内容
 def bb="write $aa"        //""内部有变量的话，先取变量的值
 def lines=''' 
@@ -21,18 +21,51 @@ println(lines)
 
 
 //定义容器
+println()
 def list=["a",5,6]
-println(containner.getAt(2))
+println(list.getAt(2))
 def map=["a":100,"b":200]
 println(map.getAt("b"))
 
 //定义方法
-def Method1(arg1){//-----------无返回值需用def
+println()
+def method1(arg1){//-----------无返回值需用def
 
 }
 
 int method2(arg1,arg2){//-------有返回值不需要def
 	arg1+arg2
 }
+println("no return:"+method1(a))
+println("with return:"+method2(3,4))
 
 //定义闭包
+//-------------作为函数用---------------------
+println()
+def aClosure={        //---------无参
+	println("hello world")
+	println(it)				//默认的参数it
+}
+aClosure.call("today is monday")
+def bClosure={aaa,bbb-> //--------带参
+	println(aaa)
+	println(bbb)
+}
+bClosure.call(111,222)
+
+//-------------作为参数用---------------------
+println()
+List each(Closure closure){}
+
+def testList=[1,22,"axm",true]
+def bbbClosure={
+	println(it)
+}
+testList.each(bbbClosure)
+
+
+gradle.afterProject ({
+	project ->
+		println("this project name is "+project.getName())
+		println("this project path is "+project.getPath())
+})
