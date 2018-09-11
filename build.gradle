@@ -1,0 +1,38 @@
+println("hello world")
+println("计算："+method2(3,4))
+
+//定义变量
+def a=1
+def b="abc"
+def int c
+
+//定义字符串
+def aa='diyi zifu chuan'  //''表示完全按照符号内部的内容
+def bb="write $aa"        //""内部有变量的话，先取变量的值
+def lines=''' 
+fasfjdskfjsldkfjs
+fafafdfasdfljcxlvcx
+dsfsafdskljfslkdjflm
+$bb'''
+
+println(aa)
+println(bb)
+println(lines)
+
+
+//定义容器
+def list=["a",5,6]
+println(containner.getAt(2))
+def map=["a":100,"b":200]
+println(map.getAt("b"))
+
+//定义方法
+def Method1(arg1){//-----------无返回值需用def
+
+}
+
+int method2(arg1,arg2){//-------有返回值不需要def
+	arg1+arg2
+}
+
+//定义闭包
