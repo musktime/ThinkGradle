@@ -70,6 +70,4 @@ gradle.afterProject ({
 		println("this project path is "+project.getPath())
 })
 
-def a ='addad'
-
 println("123456789")
