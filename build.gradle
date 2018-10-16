@@ -71,6 +71,5 @@ gradle.afterProject ({
 })
 
 def a ='addad'
-def b='123233'
 
 println("123456789")
