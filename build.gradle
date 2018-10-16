@@ -74,3 +74,4 @@ gradle.afterProject ({
 
 
 def a ='addad'
+def b='123233'
