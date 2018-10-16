@@ -70,8 +70,7 @@ gradle.afterProject ({
 		println("this project path is "+project.getPath())
 })
 
-
-
-
 def a ='addad'
 def b='123233'
+
+println("123456789")
