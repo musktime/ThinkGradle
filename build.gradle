@@ -69,3 +69,8 @@ gradle.afterProject ({
 		println("this project name is "+project.getName())
 		println("this project path is "+project.getPath())
 })
+
+
+
+
+def a ='addad'
